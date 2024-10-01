@@ -1,11 +1,10 @@
-﻿using Pet_Amigos.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pet_Amigos
+namespace Practico_4
 {
     internal static class Program
     {
@@ -17,7 +16,7 @@ namespace Pet_Amigos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Index());
+            Application.Run(new Form1());
         }
     }
 }
