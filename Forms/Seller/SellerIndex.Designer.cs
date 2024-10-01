@@ -2,15 +2,15 @@
 {
     partial class SellerIndex
     {
-        /// <summary> 
-        /// Variable del diseñador necesaria.
+        /// <summary>
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Limpiar los recursos que se estén usando.
+        /// <summary>
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de componentes
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -35,7 +35,13 @@
             this.BClientes = new System.Windows.Forms.Button();
             this.BProduct = new System.Windows.Forms.Button();
             this.BProviders = new System.Windows.Forms.Button();
+            this.DataGrid1 = new System.Windows.Forms.DataGridView();
+            this.newSalePanel1 = new Pet_Amigos.Forms.Seller.NewSalePanel();
+            this.ProveedorPanel1 = new Pet_Amigos.Forms.Seller.ProveedoresPanel();
+            this.ClientesPanel = new Pet_Amigos.Forms.Seller.ClientesPanel();
+            this.ProductPanel = new Pet_Amigos.Forms.Admin.ProductPanel();
             this.PButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // PButtons
@@ -47,10 +53,10 @@
             this.PButtons.Controls.Add(this.BClientes);
             this.PButtons.Controls.Add(this.BProduct);
             this.PButtons.Controls.Add(this.BProviders);
-            this.PButtons.Location = new System.Drawing.Point(0, 0);
+            this.PButtons.Location = new System.Drawing.Point(12, 12);
             this.PButtons.Name = "PButtons";
             this.PButtons.Size = new System.Drawing.Size(319, 452);
-            this.PButtons.TabIndex = 7;
+            this.PButtons.TabIndex = 17;
             // 
             // BLogOut
             // 
@@ -112,14 +118,61 @@
             this.BProviders.UseVisualStyleBackColor = true;
             this.BProviders.Click += new System.EventHandler(this.BProviders_Click);
             // 
+            // DataGrid1
+            // 
+            this.DataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid1.Location = new System.Drawing.Point(337, 248);
+            this.DataGrid1.Name = "DataGrid1";
+            this.DataGrid1.Size = new System.Drawing.Size(753, 217);
+            this.DataGrid1.TabIndex = 13;
+            // 
+            // newSalePanel1
+            // 
+            this.newSalePanel1.Location = new System.Drawing.Point(338, 13);
+            this.newSalePanel1.Name = "newSalePanel1";
+            this.newSalePanel1.Size = new System.Drawing.Size(751, 451);
+            this.newSalePanel1.TabIndex = 18;
+            this.newSalePanel1.Visible = false;
+            // 
+            // ProveedorPanel1
+            // 
+            this.ProveedorPanel1.Location = new System.Drawing.Point(337, 12);
+            this.ProveedorPanel1.Name = "ProveedorPanel1";
+            this.ProveedorPanel1.Size = new System.Drawing.Size(753, 230);
+            this.ProveedorPanel1.TabIndex = 15;
+            this.ProveedorPanel1.Visible = false;
+            // 
+            // ClientesPanel
+            // 
+            this.ClientesPanel.Location = new System.Drawing.Point(337, 13);
+            this.ClientesPanel.Name = "ClientesPanel";
+            this.ClientesPanel.Size = new System.Drawing.Size(749, 228);
+            this.ClientesPanel.TabIndex = 14;
+            this.ClientesPanel.Visible = false;
+            // 
+            // ProductPanel
+            // 
+            this.ProductPanel.Location = new System.Drawing.Point(338, 12);
+            this.ProductPanel.Name = "ProductPanel";
+            this.ProductPanel.Size = new System.Drawing.Size(749, 228);
+            this.ProductPanel.TabIndex = 16;
+            this.ProductPanel.Visible = false;
+            // 
             // SellerIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1099, 476);
+            this.Controls.Add(this.newSalePanel1);
             this.Controls.Add(this.PButtons);
+            this.Controls.Add(this.DataGrid1);
+            this.Controls.Add(this.ProveedorPanel1);
+            this.Controls.Add(this.ClientesPanel);
+            this.Controls.Add(this.ProductPanel);
             this.Name = "SellerIndex";
-            this.Size = new System.Drawing.Size(319, 452);
+            this.Text = "SellerIndex";
             this.PButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -133,5 +186,10 @@
         private System.Windows.Forms.Button BClientes;
         private System.Windows.Forms.Button BProduct;
         private System.Windows.Forms.Button BProviders;
+        private System.Windows.Forms.DataGridView DataGrid1;
+        private ProveedoresPanel ProveedorPanel1;
+        private ClientesPanel ClientesPanel;
+        private Admin.ProductPanel ProductPanel;
+        private NewSalePanel newSalePanel1;
     }
 }

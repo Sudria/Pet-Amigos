@@ -77,7 +77,7 @@
             this.PClientes.Controls.Add(this.label1);
             this.PClientes.Location = new System.Drawing.Point(0, 0);
             this.PClientes.Name = "PClientes";
-            this.PClientes.Size = new System.Drawing.Size(750, 229);
+            this.PClientes.Size = new System.Drawing.Size(749, 228);
             this.PClientes.TabIndex = 11;
             // 
             // button7

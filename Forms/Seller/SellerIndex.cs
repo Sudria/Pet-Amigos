@@ -1,6 +1,4 @@
-﻿using Pet_Amigos.Forms.Admin;
-using Pet_Amigos.Forms.Seller;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,39 +10,52 @@ using System.Windows.Forms;
 
 namespace Pet_Amigos.Forms.Seller
 {
-    public partial class SellerIndex : UserControl
+    public partial class SellerIndex : Form
     {
         List<UserControl> controls = new List<UserControl>();
+
         public SellerIndex()
         {
-            controls.Add(ClientesPanel);
-            controls.Add(ProductPanel);
             InitializeComponent();
+            controls.Add(ProveedorPanel1);
+            controls.Add(newSalePanel1);
+            controls.Add(ClientesPanel);
+        }
+
+
+        private void HideControls()
+        {
+            for (int i = 0; i < controls.Count; i++)
+            {
+                controls[i].Visible = false;
+            }
         }
 
         private void BClientes_Click(object sender, EventArgs e)
         {
-
+            HideControls();
+            DataGrid1.Visible = true;
+            ClientesPanel.Visible = true;
         }
 
         private void BProviders_Click(object sender, EventArgs e)
         {
-
+            HideControls();
+            DataGrid1.Visible = true;
+            ProveedorPanel1.Visible = true;
         }
 
         private void BProduct_Click(object sender, EventArgs e)
         {
-
+            HideControls();
+            DataGrid1.Visible = true;
+            ProductPanel.Visible = true;
         }
 
         private void BSales_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void BNSell_Click(object sender, EventArgs e)
-        {
-
+            HideControls();
+            DataGrid1.Visible = true;
         }
 
         private void BLogOut_Click(object sender, EventArgs e)
@@ -52,12 +63,11 @@ namespace Pet_Amigos.Forms.Seller
 
         }
 
-        private void HideAll()
+        private void BNSell_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < controls.Count; i++)
-            {
-                controls[i].Visible = false;
-            }
+            HideControls();
+            DataGrid1.Visible = false;
+            newSalePanel1.Visible = true;
         }
     }
 }

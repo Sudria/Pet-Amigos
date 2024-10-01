@@ -65,6 +65,12 @@
     <Compile Include="Forms\Seller\ClientesPanel.Designer.cs">
       <DependentUpon>ClientesPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Seller\NewSalePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Seller\NewSalePanel.Designer.cs">
+      <DependentUpon>NewSalePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Seller\ProveedoresPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,7 +90,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Seller\SellerIndex.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Seller\SellerIndex.Designer.cs">
       <DependentUpon>SellerIndex.cs</DependentUpon>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Seller\ClientesPanel.resx">
       <DependentUpon>ClientesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seller\NewSalePanel.resx">
+      <DependentUpon>NewSalePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Seller\ProveedoresPanel.resx">
       <DependentUpon>ProveedoresPanel.cs</DependentUpon>

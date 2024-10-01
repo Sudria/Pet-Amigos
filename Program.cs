@@ -1,4 +1,5 @@
 ﻿using Pet_Amigos.Forms;
+using Pet_Amigos.Forms.Seller;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Pet_Amigos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Index());
+            Application.Run(new SellerIndex());
         }
     }
 }
