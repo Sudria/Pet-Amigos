@@ -1,6 +1,6 @@
-﻿namespace Pet_Amigos.Forms.Seller
+﻿namespace Pet_Amigos.Forms.Admin
 {
-    partial class SellerIndex
+    partial class AdminIndex
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.PButtons = new System.Windows.Forms.Panel();
+            this.BProviders = new System.Windows.Forms.Button();
             this.BLogOut = new System.Windows.Forms.Button();
-            this.BNSell = new System.Windows.Forms.Button();
-            this.BClientes = new System.Windows.Forms.Button();
+            this.BUsers = new System.Windows.Forms.Button();
             this.BProduct = new System.Windows.Forms.Button();
             this.DataGrid1 = new System.Windows.Forms.DataGridView();
-            this.newSalePanel1 = new Pet_Amigos.Forms.Seller.NewSalePanel();
-            this.ClientesPanel = new Pet_Amigos.Forms.Seller.ClientesPanel();
-            this.searchProductPanel1 = new Pet_Amigos.Forms.Seller.SearchProductPanel();
+            this.userPanel1 = new Pet_Amigos.Forms.Admin.UserPanel();
+            this.productPanel1 = new Pet_Amigos.Forms.Admin.ProductPanel();
+            this.ProveedorPanel1 = new Pet_Amigos.Forms.Seller.ProveedoresPanel();
             this.PButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).BeginInit();
             this.SuspendLayout();
@@ -44,14 +44,24 @@
             // PButtons
             // 
             this.PButtons.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.PButtons.Controls.Add(this.BProviders);
             this.PButtons.Controls.Add(this.BLogOut);
-            this.PButtons.Controls.Add(this.BNSell);
-            this.PButtons.Controls.Add(this.BClientes);
+            this.PButtons.Controls.Add(this.BUsers);
             this.PButtons.Controls.Add(this.BProduct);
-            this.PButtons.Location = new System.Drawing.Point(12, 12);
+            this.PButtons.Location = new System.Drawing.Point(6, 10);
             this.PButtons.Name = "PButtons";
             this.PButtons.Size = new System.Drawing.Size(319, 452);
-            this.PButtons.TabIndex = 17;
+            this.PButtons.TabIndex = 23;
+            // 
+            // BProviders
+            // 
+            this.BProviders.Location = new System.Drawing.Point(76, 245);
+            this.BProviders.Name = "BProviders";
+            this.BProviders.Size = new System.Drawing.Size(123, 23);
+            this.BProviders.TabIndex = 6;
+            this.BProviders.Text = "Proveedores";
+            this.BProviders.UseVisualStyleBackColor = true;
+            this.BProviders.Click += new System.EventHandler(this.BProviders_Click);
             // 
             // BLogOut
             // 
@@ -61,31 +71,20 @@
             this.BLogOut.TabIndex = 5;
             this.BLogOut.Text = "Cerrar sesion";
             this.BLogOut.UseVisualStyleBackColor = true;
-            this.BLogOut.Click += new System.EventHandler(this.BLogOut_Click);
             // 
-            // BNSell
+            // BUsers
             // 
-            this.BNSell.Location = new System.Drawing.Point(76, 169);
-            this.BNSell.Name = "BNSell";
-            this.BNSell.Size = new System.Drawing.Size(123, 23);
-            this.BNSell.TabIndex = 0;
-            this.BNSell.Text = "Nueva venta";
-            this.BNSell.UseVisualStyleBackColor = true;
-            this.BNSell.Click += new System.EventHandler(this.BNSell_Click);
-            // 
-            // BClientes
-            // 
-            this.BClientes.Location = new System.Drawing.Point(76, 217);
-            this.BClientes.Name = "BClientes";
-            this.BClientes.Size = new System.Drawing.Size(123, 23);
-            this.BClientes.TabIndex = 1;
-            this.BClientes.Text = "Clientes";
-            this.BClientes.UseVisualStyleBackColor = true;
-            this.BClientes.Click += new System.EventHandler(this.BClientes_Click);
+            this.BUsers.Location = new System.Drawing.Point(76, 169);
+            this.BUsers.Name = "BUsers";
+            this.BUsers.Size = new System.Drawing.Size(123, 23);
+            this.BUsers.TabIndex = 0;
+            this.BUsers.Text = "Usuarios";
+            this.BUsers.UseVisualStyleBackColor = true;
+            this.BUsers.Click += new System.EventHandler(this.BUsers_Click);
             // 
             // BProduct
             // 
-            this.BProduct.Location = new System.Drawing.Point(76, 261);
+            this.BProduct.Location = new System.Drawing.Point(76, 206);
             this.BProduct.Name = "BProduct";
             this.BProduct.Size = new System.Drawing.Size(123, 23);
             this.BProduct.TabIndex = 3;
@@ -96,48 +95,48 @@
             // DataGrid1
             // 
             this.DataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid1.Location = new System.Drawing.Point(337, 248);
+            this.DataGrid1.Location = new System.Drawing.Point(331, 246);
             this.DataGrid1.Name = "DataGrid1";
             this.DataGrid1.Size = new System.Drawing.Size(753, 217);
-            this.DataGrid1.TabIndex = 13;
+            this.DataGrid1.TabIndex = 20;
             this.DataGrid1.Visible = false;
             // 
-            // newSalePanel1
+            // userPanel1
             // 
-            this.newSalePanel1.Location = new System.Drawing.Point(338, 13);
-            this.newSalePanel1.Name = "newSalePanel1";
-            this.newSalePanel1.Size = new System.Drawing.Size(751, 451);
-            this.newSalePanel1.TabIndex = 18;
-            this.newSalePanel1.Visible = false;
+            this.userPanel1.Location = new System.Drawing.Point(331, 10);
+            this.userPanel1.Name = "userPanel1";
+            this.userPanel1.Size = new System.Drawing.Size(749, 228);
+            this.userPanel1.TabIndex = 25;
+            this.userPanel1.Visible = false;
             // 
-            // ClientesPanel
+            // productPanel1
             // 
-            this.ClientesPanel.Location = new System.Drawing.Point(337, 13);
-            this.ClientesPanel.Name = "ClientesPanel";
-            this.ClientesPanel.Size = new System.Drawing.Size(749, 228);
-            this.ClientesPanel.TabIndex = 14;
-            this.ClientesPanel.Visible = false;
+            this.productPanel1.Location = new System.Drawing.Point(331, 10);
+            this.productPanel1.Name = "productPanel1";
+            this.productPanel1.Size = new System.Drawing.Size(749, 228);
+            this.productPanel1.TabIndex = 24;
+            this.productPanel1.Visible = false;
             // 
-            // searchProductPanel1
+            // ProveedorPanel1
             // 
-            this.searchProductPanel1.Location = new System.Drawing.Point(337, 12);
-            this.searchProductPanel1.Name = "searchProductPanel1";
-            this.searchProductPanel1.Size = new System.Drawing.Size(750, 229);
-            this.searchProductPanel1.TabIndex = 19;
-            this.searchProductPanel1.Visible = false;
+            this.ProveedorPanel1.Location = new System.Drawing.Point(331, 10);
+            this.ProveedorPanel1.Name = "ProveedorPanel1";
+            this.ProveedorPanel1.Size = new System.Drawing.Size(753, 230);
+            this.ProveedorPanel1.TabIndex = 22;
+            this.ProveedorPanel1.Visible = false;
             // 
-            // SellerIndex
+            // AdminIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 476);
+            this.Controls.Add(this.userPanel1);
             this.Controls.Add(this.PButtons);
             this.Controls.Add(this.DataGrid1);
-            this.Controls.Add(this.ClientesPanel);
-            this.Controls.Add(this.searchProductPanel1);
-            this.Controls.Add(this.newSalePanel1);
-            this.Name = "SellerIndex";
-            this.Text = "SellerIndex";
+            this.Controls.Add(this.productPanel1);
+            this.Controls.Add(this.ProveedorPanel1);
+            this.Name = "AdminIndex";
+            this.Text = "AdminIndex";
             this.PButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).EndInit();
             this.ResumeLayout(false);
@@ -145,15 +144,14 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Panel PButtons;
         private System.Windows.Forms.Button BLogOut;
-        private System.Windows.Forms.Button BNSell;
-        private System.Windows.Forms.Button BClientes;
+        private System.Windows.Forms.Button BUsers;
         private System.Windows.Forms.Button BProduct;
         private System.Windows.Forms.DataGridView DataGrid1;
-        private ClientesPanel ClientesPanel;
-        private NewSalePanel newSalePanel1;
-        private SearchProductPanel searchProductPanel1;
+        private Seller.ProveedoresPanel ProveedorPanel1;
+        private System.Windows.Forms.Button BProviders;
+        private ProductPanel productPanel1;
+        private UserPanel userPanel1;
     }
 }

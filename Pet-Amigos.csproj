@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Utils\Validator.cs" />
+    <Compile Include="Forms\Admin\AdminIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\AdminIndex.Designer.cs">
+      <DependentUpon>AdminIndex.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin\NewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,11 +65,23 @@
     <Compile Include="Forms\Admin\ProductPanel.Designer.cs">
       <DependentUpon>ProductPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin\UserPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Seller\ClientesPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Seller\ClientesPanel.Designer.cs">
       <DependentUpon>ClientesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seller\ClientFormAux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Seller\ClientFormAux.Designer.cs">
+      <DependentUpon>ClientFormAux.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Seller\NewSalePanel.cs">
       <SubType>UserControl</SubType>
@@ -71,23 +89,23 @@
     <Compile Include="Forms\Seller\NewSalePanel.Designer.cs">
       <DependentUpon>NewSalePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Seller\ProveedoresPanel.cs">
+    <Compile Include="Forms\Admin\ProveedoresPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Seller\ProveedoresPanel.Designer.cs">
+    <Compile Include="Forms\Admin\ProveedoresPanel.Designer.cs">
       <DependentUpon>ProveedoresPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Index.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Index.Designer.cs">
-      <DependentUpon>Index.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seller\SearchProductPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Seller\SearchProductPanel.Designer.cs">
+      <DependentUpon>SearchProductPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Seller\SellerIndex.cs">
       <SubType>Form</SubType>
@@ -97,26 +115,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Admin\AdminIndex.resx">
+      <DependentUpon>AdminIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\NewProduct.resx">
       <DependentUpon>NewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\ProductPanel.resx">
       <DependentUpon>ProductPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Seller\ClientesPanel.resx">
       <DependentUpon>ClientesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seller\ClientFormAux.resx">
+      <DependentUpon>ClientFormAux.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Seller\NewSalePanel.resx">
       <DependentUpon>NewSalePanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Seller\ProveedoresPanel.resx">
+    <EmbeddedResource Include="Forms\Admin\ProveedoresPanel.resx">
       <DependentUpon>ProveedoresPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Index.resx">
-      <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seller\SearchProductPanel.resx">
+      <DependentUpon>SearchProductPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Seller\SellerIndex.resx">
       <DependentUpon>SellerIndex.cs</DependentUpon>

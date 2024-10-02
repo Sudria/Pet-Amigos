@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Pet_Amigos.Forms.Seller
 {
-    public partial class NewSalePanel : UserControl
+    public partial class SearchProductPanel : UserControl
     {
-        public NewSalePanel()
+        public SearchProductPanel()
         {
             InitializeComponent();
-        }
-
-        private void BAddClient_Click(object sender, EventArgs e)
-        {
-            ClientFormAux clientFormAux = new ClientFormAux();
-            clientFormAux.ShowDialog();
         }
     }
 }

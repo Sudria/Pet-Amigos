@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|C:\\Users\\gonza\\Desktop\\Taller de programacion II\\forms\\seller\\sellerindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\admin\\adminindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\admin\\adminindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\seller\\sellerindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\seller\\sellerindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|C:\\Users\\gonza\\Desktop\\Taller de programacion II\\forms\\seller\\sellerindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\seller\\sellerindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\admin\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\admin\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|C:\\Users\\gonza\\Desktop\\Taller de programacion II\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\admin\\proveedorespanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\admin\\proveedorespanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\admin\\adminindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\admin\\adminindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\admin\\productpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\admin\\productpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\admin\\newproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\admin\\newproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\seller\\proveedorespanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\seller\\proveedorespanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\seller\\clientespanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\seller\\clientespanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|c:\\users\\gonza\\desktop\\taller de programacion ii\\forms\\seller\\newsalepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\seller\\newsalepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|C:\\Users\\gonza\\Desktop\\Taller de programacion II\\forms\\seller\\sellerindex.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\seller\\sellerindex.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|C:\\Users\\gonza\\Desktop\\Taller de programacion II\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{742F9193-DAD6-4300-8D53-F77731D6F0B4}|Pet-Amigos.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,21 +38,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SellerIndex.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.cs",
-              "RelativeDocumentMoniker": "Forms\\Seller\\SellerIndex.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Forms\\Seller\\SellerIndex.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T07:39:16.082Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -79,18 +54,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProveedoresPanel.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\ProveedoresPanel.cs",
-              "RelativeDocumentMoniker": "Forms\\Seller\\ProveedoresPanel.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\ProveedoresPanel.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\Seller\\ProveedoresPanel.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T21:09:44.894Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ClientesPanel.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\ClientesPanel.cs",
@@ -98,95 +61,83 @@
               "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\ClientesPanel.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\Seller\\ClientesPanel.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T20:47:42.242Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NewSalePanel.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\NewSalePanel.cs",
-              "RelativeDocumentMoniker": "Forms\\Seller\\NewSalePanel.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\NewSalePanel.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\Seller\\NewSalePanel.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T20:46:39.428Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NewProduct.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\NewProduct.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\NewProduct.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\NewProduct.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\Admin\\NewProduct.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T20:41:41.969Z",
+              "WhenOpened": "2024-10-02T08:05:15.539Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductPanel.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\ProductPanel.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\ProductPanel.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\ProductPanel.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\Admin\\ProductPanel.cs [Dise\u00F1o]",
+              "Title": "ProveedoresPanel.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\ProveedoresPanel.cs",
+              "RelativeDocumentMoniker": "Forms\\Admin\\ProveedoresPanel.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\ProveedoresPanel.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\Admin\\ProveedoresPanel.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T20:41:40.253Z",
+              "WhenOpened": "2024-10-02T08:05:05.708Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Title": "UserPanel.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\UserPanel.cs",
+              "RelativeDocumentMoniker": "Forms\\Admin\\UserPanel.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\UserPanel.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\Admin\\UserPanel.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T07:41:48.121Z",
+              "WhenOpened": "2024-10-02T08:05:01.186Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SellerIndex.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.cs",
+              "RelativeDocumentMoniker": "Forms\\Seller\\SellerIndex.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.cs",
+              "RelativeToolTip": "Forms\\Seller\\SellerIndex.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T08:02:35.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SellerIndex.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.cs",
-              "RelativeDocumentMoniker": "Forms\\Seller\\SellerIndex.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.cs*",
-              "RelativeToolTip": "Forms\\Seller\\SellerIndex.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxQAAAAmAAAAAAAAAA==",
+              "Title": "AdminIndex.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\AdminIndex.cs",
+              "RelativeDocumentMoniker": "Forms\\Admin\\AdminIndex.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\AdminIndex.cs*",
+              "RelativeToolTip": "Forms\\Admin\\AdminIndex.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T07:40:39.393Z",
+              "WhenOpened": "2024-10-02T07:58:56.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SellerIndex.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\Seller\\SellerIndex.Designer.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Seller\\SellerIndex.Designer.cs",
-              "RelativeToolTip": "Forms\\Seller\\SellerIndex.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AdminIndex.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\AdminIndex.cs",
+              "RelativeDocumentMoniker": "Forms\\Admin\\AdminIndex.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Admin\\AdminIndex.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Forms\\Admin\\AdminIndex.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T07:39:38.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Login.cs",
-              "RelativeDocumentMoniker": "Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Forms\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\Login.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T23:53:33.725Z",
+              "WhenOpened": "2024-10-02T07:57:41.1Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Taller de programacion II\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:51:00.097Z",
+              "EditorCaption": ""
             }
           ]
         }

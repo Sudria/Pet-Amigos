@@ -17,9 +17,11 @@ namespace Pet_Amigos.Forms.Seller
         public SellerIndex()
         {
             InitializeComponent();
-            controls.Add(ProveedorPanel1);
             controls.Add(newSalePanel1);
             controls.Add(ClientesPanel);
+            controls.Add(searchProductPanel1);
+
+
         }
 
 
@@ -38,25 +40,15 @@ namespace Pet_Amigos.Forms.Seller
             ClientesPanel.Visible = true;
         }
 
-        private void BProviders_Click(object sender, EventArgs e)
-        {
-            HideControls();
-            DataGrid1.Visible = true;
-            ProveedorPanel1.Visible = true;
-        }
 
         private void BProduct_Click(object sender, EventArgs e)
         {
             HideControls();
             DataGrid1.Visible = true;
-            ProductPanel.Visible = true;
+            searchProductPanel1.Visible = true;
         }
 
-        private void BSales_Click(object sender, EventArgs e)
-        {
-            HideControls();
-            DataGrid1.Visible = true;
-        }
+ 
 
         private void BLogOut_Click(object sender, EventArgs e)
         {

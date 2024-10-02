@@ -1,6 +1,4 @@
-﻿using Pet_Amigos.Forms.Admin;
-using Pet_Amigos.Forms.Seller;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,20 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pet_Amigos.Forms
+namespace Pet_Amigos.Forms.Admin
 {
-    public partial class Index : Form
+    public partial class AdminIndex : Form
     {
         List<UserControl> controls = new List<UserControl>();
 
-        public Index()
+        public AdminIndex()
         {
             InitializeComponent();
             controls.Add(ProveedorPanel1);
-            controls.Add(ClientesPanel);
-            controls.Add(ProductPanel);
+            controls.Add(productPanel1);
+            controls.Add(userPanel1);
         }
-
 
         private void HideControls()
         {
@@ -33,27 +30,29 @@ namespace Pet_Amigos.Forms
             }
         }
 
-        private void BClientes_Click(object sender, EventArgs e)
+        private void BUsers_Click(object sender, EventArgs e)
         {
             HideControls();
-            ClientesPanel.Visible = true;
+            DataGrid1.Visible = true;
+            userPanel1.Visible = true;
         }
+
+
+
 
         private void BProviders_Click(object sender, EventArgs e)
         {
             HideControls();
+            DataGrid1.Visible = true;
             ProveedorPanel1.Visible = true;
+
         }
 
         private void BProduct_Click(object sender, EventArgs e)
         {
             HideControls();
-            ProductPanel.Visible = true;
-        }
-
-        private void BSales_Click(object sender, EventArgs e)
-        {
-
+            DataGrid1.Visible = true;
+            productPanel1.Visible = true;
         }
     }
 }
