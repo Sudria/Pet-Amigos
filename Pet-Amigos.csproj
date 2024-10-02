@@ -113,6 +113,12 @@
     <Compile Include="Forms\Seller\SellerIndex.Designer.cs">
       <DependentUpon>SellerIndex.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Supervisor\SupervisorIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supervisor\SupervisorIndex.Designer.cs">
+      <DependentUpon>SupervisorIndex.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Admin\AdminIndex.resx">
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="Forms\Seller\SellerIndex.resx">
       <DependentUpon>SellerIndex.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supervisor\SupervisorIndex.resx">
+      <DependentUpon>SupervisorIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -173,7 +182,6 @@
   <ItemGroup>
     <Folder Include="Classes\Models\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Forms\Supervisor\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

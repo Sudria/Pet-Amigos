@@ -47,7 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label9
@@ -58,7 +58,6 @@
             this.label9.Size = new System.Drawing.Size(111, 13);
             this.label9.TabIndex = 39;
             this.label9.Text = "AGREGAR  CLIENTE";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // BGuardarCliente
             // 
@@ -68,7 +67,6 @@
             this.BGuardarCliente.TabIndex = 38;
             this.BGuardarCliente.Text = "Guardar";
             this.BGuardarCliente.UseVisualStyleBackColor = true;
-            this.BGuardarCliente.Click += new System.EventHandler(this.BGuardarCliente_Click);
             // 
             // RBFem
             // 
@@ -79,7 +77,6 @@
             this.RBFem.TabIndex = 37;
             this.RBFem.Text = "Femenino";
             this.RBFem.UseVisualStyleBackColor = true;
-            this.RBFem.CheckedChanged += new System.EventHandler(this.RBFem_CheckedChanged);
             // 
             // RBMasc
             // 
@@ -92,7 +89,6 @@
             this.RBMasc.TabStop = true;
             this.RBMasc.Text = "Masculino";
             this.RBMasc.UseVisualStyleBackColor = true;
-            this.RBMasc.CheckedChanged += new System.EventHandler(this.RBMasc_CheckedChanged);
             // 
             // TBDirec
             // 
@@ -100,7 +96,6 @@
             this.TBDirec.Name = "TBDirec";
             this.TBDirec.Size = new System.Drawing.Size(194, 20);
             this.TBDirec.TabIndex = 35;
-            this.TBDirec.TextChanged += new System.EventHandler(this.TBDirec_TextChanged);
             // 
             // TBNac
             // 
@@ -108,7 +103,6 @@
             this.TBNac.Name = "TBNac";
             this.TBNac.Size = new System.Drawing.Size(194, 20);
             this.TBNac.TabIndex = 34;
-            this.TBNac.TextChanged += new System.EventHandler(this.TBNac_TextChanged);
             // 
             // TBEmail
             // 
@@ -116,7 +110,6 @@
             this.TBEmail.Name = "TBEmail";
             this.TBEmail.Size = new System.Drawing.Size(194, 20);
             this.TBEmail.TabIndex = 33;
-            this.TBEmail.TextChanged += new System.EventHandler(this.TBEmail_TextChanged);
             // 
             // TBTel
             // 
@@ -124,7 +117,6 @@
             this.TBTel.Name = "TBTel";
             this.TBTel.Size = new System.Drawing.Size(194, 20);
             this.TBTel.TabIndex = 32;
-            this.TBTel.TextChanged += new System.EventHandler(this.TBTel_TextChanged);
             // 
             // TBCuit
             // 
@@ -132,7 +124,6 @@
             this.TBCuit.Name = "TBCuit";
             this.TBCuit.Size = new System.Drawing.Size(194, 20);
             this.TBCuit.TabIndex = 31;
-            this.TBCuit.TextChanged += new System.EventHandler(this.TBCuit_TextChanged);
             // 
             // TBApellido
             // 
@@ -140,7 +131,6 @@
             this.TBApellido.Name = "TBApellido";
             this.TBApellido.Size = new System.Drawing.Size(194, 20);
             this.TBApellido.TabIndex = 30;
-            this.TBApellido.TextChanged += new System.EventHandler(this.TBApellido_TextChanged);
             // 
             // TBNombre
             // 
@@ -148,7 +138,6 @@
             this.TBNombre.Name = "TBNombre";
             this.TBNombre.Size = new System.Drawing.Size(194, 20);
             this.TBNombre.TabIndex = 29;
-            this.TBNombre.TextChanged += new System.EventHandler(this.TBNombre_TextChanged);
             // 
             // label8
             // 
@@ -158,7 +147,6 @@
             this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 28;
             this.label8.Text = "Direccion";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -168,7 +156,6 @@
             this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 27;
             this.label7.Text = "Telefono";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -178,7 +165,6 @@
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 26;
             this.label6.Text = "Email";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -188,7 +174,6 @@
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 25;
             this.label5.Text = "Genero";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -198,7 +183,6 @@
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 24;
             this.label4.Text = "F. de Nac";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -208,7 +192,6 @@
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 23;
             this.label3.Text = "CUIT";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -218,7 +201,6 @@
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 22;
             this.label2.Text = "Apellido";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -228,23 +210,23 @@
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 21;
             this.label1.Text = "Nombre";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // BCancel
             // 
-            this.button1.Location = new System.Drawing.Point(409, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BCancel.Location = new System.Drawing.Point(409, 198);
+            this.BCancel.Name = "BCancel";
+            this.BCancel.Size = new System.Drawing.Size(75, 23);
+            this.BCancel.TabIndex = 40;
+            this.BCancel.Text = "Cancelar";
+            this.BCancel.UseVisualStyleBackColor = true;
+            this.BCancel.Click += new System.EventHandler(this.BCancel_Click);
             // 
             // ClientFormAux
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 247);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BCancel);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.BGuardarCliente);
             this.Controls.Add(this.RBFem);
@@ -292,6 +274,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BCancel;
     }
 }

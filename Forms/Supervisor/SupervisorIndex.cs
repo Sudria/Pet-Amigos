@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pet_Amigos.Forms.Seller
+namespace Pet_Amigos.Forms.Supervisor
 {
-    public partial class ClientFormAux : Form
+    public partial class SupervisorIndex : Form
     {
-        public ClientFormAux()
+        public SupervisorIndex()
         {
             InitializeComponent();
-        }
-
- 
-
-        private void BCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
