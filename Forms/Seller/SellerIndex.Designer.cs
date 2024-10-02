@@ -34,28 +34,28 @@
             this.BClientes = new System.Windows.Forms.Button();
             this.BProduct = new System.Windows.Forms.Button();
             this.DataGrid1 = new System.Windows.Forms.DataGridView();
-            this.newSalePanel1 = new Pet_Amigos.Forms.Seller.NewSalePanel();
             this.ClientesPanel = new Pet_Amigos.Forms.Seller.ClientesPanel();
             this.searchProductPanel1 = new Pet_Amigos.Forms.Seller.SearchProductPanel();
+            this.newSalePanel1 = new Pet_Amigos.Forms.Seller.NewSalePanel();
             this.PButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // PButtons
             // 
-            this.PButtons.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.PButtons.BackColor = System.Drawing.Color.Teal;
             this.PButtons.Controls.Add(this.BLogOut);
             this.PButtons.Controls.Add(this.BNSell);
             this.PButtons.Controls.Add(this.BClientes);
             this.PButtons.Controls.Add(this.BProduct);
-            this.PButtons.Location = new System.Drawing.Point(12, 12);
+            this.PButtons.Location = new System.Drawing.Point(0, -1);
             this.PButtons.Name = "PButtons";
             this.PButtons.Size = new System.Drawing.Size(319, 452);
             this.PButtons.TabIndex = 17;
             // 
             // BLogOut
             // 
-            this.BLogOut.Location = new System.Drawing.Point(76, 404);
+            this.BLogOut.Location = new System.Drawing.Point(93, 396);
             this.BLogOut.Name = "BLogOut";
             this.BLogOut.Size = new System.Drawing.Size(123, 23);
             this.BLogOut.TabIndex = 5;
@@ -65,7 +65,7 @@
             // 
             // BNSell
             // 
-            this.BNSell.Location = new System.Drawing.Point(76, 169);
+            this.BNSell.Location = new System.Drawing.Point(93, 161);
             this.BNSell.Name = "BNSell";
             this.BNSell.Size = new System.Drawing.Size(123, 23);
             this.BNSell.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             // BClientes
             // 
-            this.BClientes.Location = new System.Drawing.Point(76, 217);
+            this.BClientes.Location = new System.Drawing.Point(93, 209);
             this.BClientes.Name = "BClientes";
             this.BClientes.Size = new System.Drawing.Size(123, 23);
             this.BClientes.TabIndex = 1;
@@ -85,7 +85,7 @@
             // 
             // BProduct
             // 
-            this.BProduct.Location = new System.Drawing.Point(76, 261);
+            this.BProduct.Location = new System.Drawing.Point(93, 253);
             this.BProduct.Name = "BProduct";
             this.BProduct.Size = new System.Drawing.Size(123, 23);
             this.BProduct.TabIndex = 3;
@@ -96,23 +96,15 @@
             // DataGrid1
             // 
             this.DataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid1.Location = new System.Drawing.Point(337, 248);
+            this.DataGrid1.Location = new System.Drawing.Point(310, 234);
             this.DataGrid1.Name = "DataGrid1";
             this.DataGrid1.Size = new System.Drawing.Size(753, 217);
             this.DataGrid1.TabIndex = 13;
             this.DataGrid1.Visible = false;
             // 
-            // newSalePanel1
-            // 
-            this.newSalePanel1.Location = new System.Drawing.Point(338, 13);
-            this.newSalePanel1.Name = "newSalePanel1";
-            this.newSalePanel1.Size = new System.Drawing.Size(751, 451);
-            this.newSalePanel1.TabIndex = 18;
-            this.newSalePanel1.Visible = false;
-            // 
             // ClientesPanel
             // 
-            this.ClientesPanel.Location = new System.Drawing.Point(337, 13);
+            this.ClientesPanel.Location = new System.Drawing.Point(310, -1);
             this.ClientesPanel.Name = "ClientesPanel";
             this.ClientesPanel.Size = new System.Drawing.Size(749, 228);
             this.ClientesPanel.TabIndex = 14;
@@ -120,17 +112,27 @@
             // 
             // searchProductPanel1
             // 
-            this.searchProductPanel1.Location = new System.Drawing.Point(337, 12);
+            this.searchProductPanel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.searchProductPanel1.Location = new System.Drawing.Point(310, -2);
             this.searchProductPanel1.Name = "searchProductPanel1";
             this.searchProductPanel1.Size = new System.Drawing.Size(750, 229);
             this.searchProductPanel1.TabIndex = 19;
             this.searchProductPanel1.Visible = false;
             // 
+            // newSalePanel1
+            // 
+            this.newSalePanel1.Location = new System.Drawing.Point(311, -1);
+            this.newSalePanel1.Name = "newSalePanel1";
+            this.newSalePanel1.Size = new System.Drawing.Size(751, 451);
+            this.newSalePanel1.TabIndex = 18;
+            this.newSalePanel1.Visible = false;
+            // 
             // SellerIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 476);
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(1062, 453);
             this.Controls.Add(this.PButtons);
             this.Controls.Add(this.DataGrid1);
             this.Controls.Add(this.ClientesPanel);

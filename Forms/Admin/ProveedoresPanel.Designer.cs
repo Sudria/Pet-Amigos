@@ -54,7 +54,7 @@
             // 
             // PClientes
             // 
-            this.PClientes.BackColor = System.Drawing.Color.Coral;
+            this.PClientes.BackColor = System.Drawing.Color.DarkOrange;
             this.PClientes.Controls.Add(this.button7);
             this.PClientes.Controls.Add(this.label9);
             this.PClientes.Controls.Add(this.BGuardarCliente);

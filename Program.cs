@@ -19,7 +19,7 @@ namespace Pet_Amigos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminIndex());
+            Application.Run(new Login());
         }
     }
 }

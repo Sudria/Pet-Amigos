@@ -35,7 +35,6 @@
             this.RBFem = new System.Windows.Forms.RadioButton();
             this.RBMasc = new System.Windows.Forms.RadioButton();
             this.TBDirec = new System.Windows.Forms.TextBox();
-            this.TBNac = new System.Windows.Forms.TextBox();
             this.TBEmail = new System.Windows.Forms.TextBox();
             this.TBTel = new System.Windows.Forms.TextBox();
             this.TBCuit = new System.Windows.Forms.TextBox();
@@ -49,19 +48,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.DTPNac = new System.Windows.Forms.DateTimePicker();
             this.PClientes.SuspendLayout();
             this.SuspendLayout();
             // 
             // PClientes
             // 
-            this.PClientes.BackColor = System.Drawing.Color.Coral;
+            this.PClientes.BackColor = System.Drawing.Color.DarkOrange;
+            this.PClientes.Controls.Add(this.DTPNac);
             this.PClientes.Controls.Add(this.button7);
             this.PClientes.Controls.Add(this.label9);
             this.PClientes.Controls.Add(this.BGuardarCliente);
             this.PClientes.Controls.Add(this.RBFem);
             this.PClientes.Controls.Add(this.RBMasc);
             this.PClientes.Controls.Add(this.TBDirec);
-            this.PClientes.Controls.Add(this.TBNac);
             this.PClientes.Controls.Add(this.TBEmail);
             this.PClientes.Controls.Add(this.TBTel);
             this.PClientes.Controls.Add(this.TBCuit);
@@ -106,6 +106,7 @@
             this.BGuardarCliente.TabIndex = 18;
             this.BGuardarCliente.Text = "Guardar";
             this.BGuardarCliente.UseVisualStyleBackColor = true;
+            this.BGuardarCliente.Click += new System.EventHandler(this.BGuardarCliente_Click);
             // 
             // RBFem
             // 
@@ -135,13 +136,6 @@
             this.TBDirec.Name = "TBDirec";
             this.TBDirec.Size = new System.Drawing.Size(194, 20);
             this.TBDirec.TabIndex = 15;
-            // 
-            // TBNac
-            // 
-            this.TBNac.Location = new System.Drawing.Point(396, 40);
-            this.TBNac.Name = "TBNac";
-            this.TBNac.Size = new System.Drawing.Size(194, 20);
-            this.TBNac.TabIndex = 14;
             // 
             // TBEmail
             // 
@@ -250,6 +244,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre";
             // 
+            // DTPNac
+            // 
+            this.DTPNac.Location = new System.Drawing.Point(397, 39);
+            this.DTPNac.Name = "DTPNac";
+            this.DTPNac.Size = new System.Drawing.Size(200, 20);
+            this.DTPNac.TabIndex = 21;
+            // 
             // ClientesPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,7 +273,6 @@
         private System.Windows.Forms.RadioButton RBFem;
         private System.Windows.Forms.RadioButton RBMasc;
         private System.Windows.Forms.TextBox TBDirec;
-        private System.Windows.Forms.TextBox TBNac;
         private System.Windows.Forms.TextBox TBEmail;
         private System.Windows.Forms.TextBox TBTel;
         private System.Windows.Forms.TextBox TBCuit;
@@ -286,5 +286,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker DTPNac;
     }
 }

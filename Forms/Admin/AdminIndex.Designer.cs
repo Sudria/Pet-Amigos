@@ -43,19 +43,19 @@
             // 
             // PButtons
             // 
-            this.PButtons.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.PButtons.BackColor = System.Drawing.Color.DarkCyan;
             this.PButtons.Controls.Add(this.BProviders);
             this.PButtons.Controls.Add(this.BLogOut);
             this.PButtons.Controls.Add(this.BUsers);
             this.PButtons.Controls.Add(this.BProduct);
-            this.PButtons.Location = new System.Drawing.Point(6, 10);
+            this.PButtons.Location = new System.Drawing.Point(1, 1);
             this.PButtons.Name = "PButtons";
             this.PButtons.Size = new System.Drawing.Size(319, 452);
             this.PButtons.TabIndex = 23;
             // 
             // BProviders
             // 
-            this.BProviders.Location = new System.Drawing.Point(76, 245);
+            this.BProviders.Location = new System.Drawing.Point(95, 232);
             this.BProviders.Name = "BProviders";
             this.BProviders.Size = new System.Drawing.Size(123, 23);
             this.BProviders.TabIndex = 6;
@@ -65,7 +65,7 @@
             // 
             // BLogOut
             // 
-            this.BLogOut.Location = new System.Drawing.Point(76, 404);
+            this.BLogOut.Location = new System.Drawing.Point(95, 391);
             this.BLogOut.Name = "BLogOut";
             this.BLogOut.Size = new System.Drawing.Size(123, 23);
             this.BLogOut.TabIndex = 5;
@@ -74,7 +74,7 @@
             // 
             // BUsers
             // 
-            this.BUsers.Location = new System.Drawing.Point(76, 169);
+            this.BUsers.Location = new System.Drawing.Point(95, 156);
             this.BUsers.Name = "BUsers";
             this.BUsers.Size = new System.Drawing.Size(123, 23);
             this.BUsers.TabIndex = 0;
@@ -84,7 +84,7 @@
             // 
             // BProduct
             // 
-            this.BProduct.Location = new System.Drawing.Point(76, 206);
+            this.BProduct.Location = new System.Drawing.Point(95, 193);
             this.BProduct.Name = "BProduct";
             this.BProduct.Size = new System.Drawing.Size(123, 23);
             this.BProduct.TabIndex = 3;
@@ -95,7 +95,7 @@
             // DataGrid1
             // 
             this.DataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid1.Location = new System.Drawing.Point(331, 246);
+            this.DataGrid1.Location = new System.Drawing.Point(320, 237);
             this.DataGrid1.Name = "DataGrid1";
             this.DataGrid1.Size = new System.Drawing.Size(753, 217);
             this.DataGrid1.TabIndex = 20;
@@ -103,7 +103,8 @@
             // 
             // userPanel1
             // 
-            this.userPanel1.Location = new System.Drawing.Point(331, 10);
+            this.userPanel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.userPanel1.Location = new System.Drawing.Point(326, 1);
             this.userPanel1.Name = "userPanel1";
             this.userPanel1.Size = new System.Drawing.Size(749, 228);
             this.userPanel1.TabIndex = 25;
@@ -111,7 +112,8 @@
             // 
             // productPanel1
             // 
-            this.productPanel1.Location = new System.Drawing.Point(331, 10);
+            this.productPanel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.productPanel1.Location = new System.Drawing.Point(326, 1);
             this.productPanel1.Name = "productPanel1";
             this.productPanel1.Size = new System.Drawing.Size(749, 228);
             this.productPanel1.TabIndex = 24;
@@ -119,7 +121,7 @@
             // 
             // ProveedorPanel1
             // 
-            this.ProveedorPanel1.Location = new System.Drawing.Point(331, 10);
+            this.ProveedorPanel1.Location = new System.Drawing.Point(326, 1);
             this.ProveedorPanel1.Name = "ProveedorPanel1";
             this.ProveedorPanel1.Size = new System.Drawing.Size(753, 230);
             this.ProveedorPanel1.TabIndex = 22;
@@ -129,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 476);
+            this.ClientSize = new System.Drawing.Size(1069, 452);
             this.Controls.Add(this.userPanel1);
             this.Controls.Add(this.PButtons);
             this.Controls.Add(this.DataGrid1);
