@@ -37,7 +37,6 @@
             this.TBPMin = new System.Windows.Forms.TextBox();
             this.TBPPrice = new System.Windows.Forms.TextBox();
             this.TBPCant = new System.Windows.Forms.TextBox();
-            this.TBPName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.PBPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +68,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(407, 46);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(408, 38);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -77,7 +78,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(285, 53);
+            this.label8.Location = new System.Drawing.Point(286, 45);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 13);
             this.label8.TabIndex = 57;
@@ -94,6 +95,7 @@
             // 
             // PBPicture
             // 
+            this.PBPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PBPicture.Location = new System.Drawing.Point(514, 7);
             this.PBPicture.Name = "PBPicture";
             this.PBPicture.Size = new System.Drawing.Size(205, 215);
@@ -102,7 +104,8 @@
             // 
             // TBPMin
             // 
-            this.TBPMin.Location = new System.Drawing.Point(407, 124);
+            this.TBPMin.Enabled = false;
+            this.TBPMin.Location = new System.Drawing.Point(408, 116);
             this.TBPMin.Name = "TBPMin";
             this.TBPMin.ReadOnly = true;
             this.TBPMin.Size = new System.Drawing.Size(100, 20);
@@ -110,7 +113,8 @@
             // 
             // TBPPrice
             // 
-            this.TBPPrice.Location = new System.Drawing.Point(407, 84);
+            this.TBPPrice.Enabled = false;
+            this.TBPPrice.Location = new System.Drawing.Point(408, 76);
             this.TBPPrice.Name = "TBPPrice";
             this.TBPPrice.ReadOnly = true;
             this.TBPPrice.Size = new System.Drawing.Size(100, 20);
@@ -118,25 +122,17 @@
             // 
             // TBPCant
             // 
+            this.TBPCant.Enabled = false;
             this.TBPCant.Location = new System.Drawing.Point(153, 79);
             this.TBPCant.Name = "TBPCant";
             this.TBPCant.ReadOnly = true;
-            this.TBPCant.Size = new System.Drawing.Size(100, 20);
+            this.TBPCant.Size = new System.Drawing.Size(126, 20);
             this.TBPCant.TabIndex = 47;
-            // 
-            // TBPName
-            // 
-            this.TBPName.Location = new System.Drawing.Point(153, 42);
-            this.TBPName.Name = "TBPName";
-            this.TBPName.ReadOnly = true;
-            this.TBPName.Size = new System.Drawing.Size(100, 20);
-            this.TBPName.TabIndex = 46;
-            this.TBPName.Text = " ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(286, 131);
+            this.label5.Location = new System.Drawing.Point(287, 123);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 45;
@@ -145,7 +141,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(286, 91);
+            this.label4.Location = new System.Drawing.Point(287, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 44;
@@ -180,25 +176,36 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(153, 116);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(126, 20);
             this.textBox2.TabIndex = 61;
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(153, 156);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(126, 20);
             this.textBox3.TabIndex = 62;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(153, 40);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(126, 21);
+            this.comboBox1.TabIndex = 63;
             // 
             // SearchProductPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
@@ -210,7 +217,6 @@
             this.Controls.Add(this.TBPMin);
             this.Controls.Add(this.TBPPrice);
             this.Controls.Add(this.TBPCant);
-            this.Controls.Add(this.TBPName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -235,7 +241,6 @@
         private System.Windows.Forms.TextBox TBPMin;
         private System.Windows.Forms.TextBox TBPPrice;
         private System.Windows.Forms.TextBox TBPCant;
-        private System.Windows.Forms.TextBox TBPName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -243,5 +248,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.CBPSubcategory = new System.Windows.Forms.ComboBox();
             this.CBPCategory = new System.Windows.Forms.ComboBox();
@@ -37,10 +36,8 @@
             this.BCancel = new System.Windows.Forms.Button();
             this.BSave = new System.Windows.Forms.Button();
             this.BImage = new System.Windows.Forms.Button();
-            this.PBPicture = new System.Windows.Forms.PictureBox();
-            this.TBPMin = new System.Windows.Forms.TextBox();
-            this.TBPPrice = new System.Windows.Forms.TextBox();
-            this.TBPCant = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TBPrice = new System.Windows.Forms.TextBox();
             this.TBPName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,15 +46,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.PBPicture)).BeginInit();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.CBProvider = new System.Windows.Forms.ComboBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.BCategoryPlus = new System.Windows.Forms.Button();
+            this.BSubCategoryPlus = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(423, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 38;
             // 
             // label8
             // 
@@ -119,6 +117,7 @@
             this.BSave.TabIndex = 31;
             this.BSave.Text = "Guardar";
             this.BSave.UseVisualStyleBackColor = true;
+            this.BSave.Click += new System.EventHandler(this.BSave_Click);
             // 
             // BImage
             // 
@@ -128,36 +127,23 @@
             this.BImage.TabIndex = 30;
             this.BImage.Text = "Imagen";
             this.BImage.UseVisualStyleBackColor = true;
+            this.BImage.Click += new System.EventHandler(this.BImage_Click);
             // 
-            // PBPicture
+            // pictureBox1
             // 
-            this.PBPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PBPicture.Location = new System.Drawing.Point(530, 8);
-            this.PBPicture.Name = "PBPicture";
-            this.PBPicture.Size = new System.Drawing.Size(205, 215);
-            this.PBPicture.TabIndex = 29;
-            this.PBPicture.TabStop = false;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(530, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 215);
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
             // 
-            // TBPMin
+            // TBPrice
             // 
-            this.TBPMin.Location = new System.Drawing.Point(423, 125);
-            this.TBPMin.Name = "TBPMin";
-            this.TBPMin.Size = new System.Drawing.Size(100, 20);
-            this.TBPMin.TabIndex = 28;
-            // 
-            // TBPPrice
-            // 
-            this.TBPPrice.Location = new System.Drawing.Point(423, 85);
-            this.TBPPrice.Name = "TBPPrice";
-            this.TBPPrice.Size = new System.Drawing.Size(100, 20);
-            this.TBPPrice.TabIndex = 27;
-            // 
-            // TBPCant
-            // 
-            this.TBPCant.Location = new System.Drawing.Point(169, 80);
-            this.TBPCant.Name = "TBPCant";
-            this.TBPCant.Size = new System.Drawing.Size(100, 20);
-            this.TBPCant.TabIndex = 26;
+            this.TBPrice.Location = new System.Drawing.Point(423, 85);
+            this.TBPrice.Name = "TBPrice";
+            this.TBPrice.Size = new System.Drawing.Size(100, 20);
+            this.TBPrice.TabIndex = 27;
             // 
             // TBPName
             // 
@@ -230,14 +216,64 @@
             this.button1.Text = "Cargar Productos";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(169, 80);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown1.TabIndex = 41;
+            // 
+            // CBProvider
+            // 
+            this.CBProvider.FormattingEnabled = true;
+            this.CBProvider.Location = new System.Drawing.Point(423, 46);
+            this.CBProvider.Name = "CBProvider";
+            this.CBProvider.Size = new System.Drawing.Size(100, 21);
+            this.CBProvider.TabIndex = 42;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(423, 130);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown2.TabIndex = 43;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // BCategoryPlus
+            // 
+            this.BCategoryPlus.Location = new System.Drawing.Point(13, 119);
+            this.BCategoryPlus.Name = "BCategoryPlus";
+            this.BCategoryPlus.Size = new System.Drawing.Size(29, 23);
+            this.BCategoryPlus.TabIndex = 44;
+            this.BCategoryPlus.Text = "+";
+            this.BCategoryPlus.UseVisualStyleBackColor = true;
+            this.BCategoryPlus.Click += new System.EventHandler(this.BCategoryPlus_Click);
+            // 
+            // BSubCategoryPlus
+            // 
+            this.BSubCategoryPlus.Location = new System.Drawing.Point(13, 159);
+            this.BSubCategoryPlus.Name = "BSubCategoryPlus";
+            this.BSubCategoryPlus.Size = new System.Drawing.Size(29, 23);
+            this.BSubCategoryPlus.TabIndex = 45;
+            this.BSubCategoryPlus.Text = "+";
+            this.BSubCategoryPlus.UseVisualStyleBackColor = true;
+            this.BSubCategoryPlus.Click += new System.EventHandler(this.BSubCategoryPlus_Click);
+            // 
             // ProductPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
+            this.Controls.Add(this.BSubCategoryPlus);
+            this.Controls.Add(this.BCategoryPlus);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.CBProvider);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.CBPSubcategory);
             this.Controls.Add(this.CBPCategory);
@@ -246,10 +282,8 @@
             this.Controls.Add(this.BCancel);
             this.Controls.Add(this.BSave);
             this.Controls.Add(this.BImage);
-            this.Controls.Add(this.PBPicture);
-            this.Controls.Add(this.TBPMin);
-            this.Controls.Add(this.TBPPrice);
-            this.Controls.Add(this.TBPCant);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.TBPrice);
             this.Controls.Add(this.TBPName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -258,15 +292,15 @@
             this.Controls.Add(this.label1);
             this.Name = "ProductPanel";
             this.Size = new System.Drawing.Size(749, 228);
-            ((System.ComponentModel.ISupportInitialize)(this.PBPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox CBPSubcategory;
         private System.Windows.Forms.ComboBox CBPCategory;
@@ -275,10 +309,8 @@
         private System.Windows.Forms.Button BCancel;
         private System.Windows.Forms.Button BSave;
         private System.Windows.Forms.Button BImage;
-        private System.Windows.Forms.PictureBox PBPicture;
-        private System.Windows.Forms.TextBox TBPMin;
-        private System.Windows.Forms.TextBox TBPPrice;
-        private System.Windows.Forms.TextBox TBPCant;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox TBPrice;
         private System.Windows.Forms.TextBox TBPName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -287,5 +319,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ComboBox CBProvider;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button BCategoryPlus;
+        private System.Windows.Forms.Button BSubCategoryPlus;
     }
 }

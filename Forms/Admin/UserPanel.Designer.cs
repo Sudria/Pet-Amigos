@@ -34,7 +34,6 @@
             this.RBFem = new System.Windows.Forms.RadioButton();
             this.RBMasc = new System.Windows.Forms.RadioButton();
             this.TBDirec = new System.Windows.Forms.TextBox();
-            this.TBNac = new System.Windows.Forms.TextBox();
             this.TBEmail = new System.Windows.Forms.TextBox();
             this.TBTel = new System.Windows.Forms.TextBox();
             this.TBCuit = new System.Windows.Forms.TextBox();
@@ -48,12 +47,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TBPass = new System.Windows.Forms.TextBox();
+            this.TBUser = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BImage = new System.Windows.Forms.Button();
+            this.DTNac = new System.Windows.Forms.DateTimePicker();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,6 +84,7 @@
             this.BGuardarCliente.TabIndex = 38;
             this.BGuardarCliente.Text = "Guardar";
             this.BGuardarCliente.UseVisualStyleBackColor = true;
+            this.BGuardarCliente.Click += new System.EventHandler(this.BGuardarCliente_Click);
             // 
             // RBFem
             // 
@@ -112,13 +114,6 @@
             this.TBDirec.Name = "TBDirec";
             this.TBDirec.Size = new System.Drawing.Size(194, 20);
             this.TBDirec.TabIndex = 35;
-            // 
-            // TBNac
-            // 
-            this.TBNac.Location = new System.Drawing.Point(379, 56);
-            this.TBNac.Name = "TBNac";
-            this.TBNac.Size = new System.Drawing.Size(194, 20);
-            this.TBNac.TabIndex = 34;
             // 
             // TBEmail
             // 
@@ -227,19 +222,19 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Nombre";
             // 
-            // textBox1
+            // TBPass
             // 
-            this.textBox1.Location = new System.Drawing.Point(379, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 44;
+            this.TBPass.Location = new System.Drawing.Point(379, 30);
+            this.TBPass.Name = "TBPass";
+            this.TBPass.Size = new System.Drawing.Size(194, 20);
+            this.TBPass.TabIndex = 44;
             // 
-            // textBox2
+            // TBUser
             // 
-            this.textBox2.Location = new System.Drawing.Point(87, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 43;
+            this.TBUser.Location = new System.Drawing.Point(87, 30);
+            this.TBUser.Name = "TBUser";
+            this.TBUser.Size = new System.Drawing.Size(194, 20);
+            this.TBUser.TabIndex = 43;
             // 
             // label10
             // 
@@ -267,24 +262,41 @@
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // BImage
             // 
-            this.button1.Location = new System.Drawing.Point(22, 202);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "Imagen";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BImage.Location = new System.Drawing.Point(22, 202);
+            this.BImage.Name = "BImage";
+            this.BImage.Size = new System.Drawing.Size(92, 23);
+            this.BImage.TabIndex = 46;
+            this.BImage.Text = "Imagen";
+            this.BImage.UseVisualStyleBackColor = true;
+            this.BImage.Click += new System.EventHandler(this.BImage_Click);
+            // 
+            // DTNac
+            // 
+            this.DTNac.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DTNac.Location = new System.Drawing.Point(379, 56);
+            this.DTNac.MaxDate = new System.DateTime(2016, 1, 1, 0, 0, 0, 0);
+            this.DTNac.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.DTNac.Name = "DTNac";
+            this.DTNac.Size = new System.Drawing.Size(194, 20);
+            this.DTNac.TabIndex = 47;
+            this.DTNac.Value = new System.DateTime(2016, 1, 1, 0, 0, 0, 0);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // UserPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DTNac);
+            this.Controls.Add(this.BImage);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TBPass);
+            this.Controls.Add(this.TBUser);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button7);
@@ -293,7 +305,6 @@
             this.Controls.Add(this.RBFem);
             this.Controls.Add(this.RBMasc);
             this.Controls.Add(this.TBDirec);
-            this.Controls.Add(this.TBNac);
             this.Controls.Add(this.TBEmail);
             this.Controls.Add(this.TBTel);
             this.Controls.Add(this.TBCuit);
@@ -323,7 +334,6 @@
         private System.Windows.Forms.RadioButton RBFem;
         private System.Windows.Forms.RadioButton RBMasc;
         private System.Windows.Forms.TextBox TBDirec;
-        private System.Windows.Forms.TextBox TBNac;
         private System.Windows.Forms.TextBox TBEmail;
         private System.Windows.Forms.TextBox TBTel;
         private System.Windows.Forms.TextBox TBCuit;
@@ -337,11 +347,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TBPass;
+        private System.Windows.Forms.TextBox TBUser;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BImage;
+        private System.Windows.Forms.DateTimePicker DTNac;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

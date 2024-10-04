@@ -20,15 +20,11 @@ namespace Pet_Amigos.Forms.Seller
 
         private void BGuardarCliente_Click(object sender, EventArgs e)
         {
-            
-            
-            Validator.isValidNum(TBCuit.Text);
-            Validator.isValidNum(TBTel.Text);
-
-            Validator.isValidText(DTPNac.Text);
+            Validator.isValidNum(TBCuit.Text, "Cuit");
+            Validator.isValidNum(TBTel.Text,"Telefono");
             Validator.isValidEmail(TBEmail.Text);
-            Validator.isValidText(TBNombre.Text);
-            Validator.isValidText(TBApellido.Text);
+            Validator.isValidText(TBNombre.Text, "Nombre");
+            Validator.isValidText(TBApellido.Text, "Apellido");
 
             //direcion no tiene que ser validado ya que pue ingresar cualquier texto
 

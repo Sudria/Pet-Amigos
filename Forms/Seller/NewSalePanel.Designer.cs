@@ -47,10 +47,10 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.BAddProduct = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.PClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,7 @@
             // PClientes
             // 
             this.PClientes.BackColor = System.Drawing.Color.DarkOrange;
+            this.PClientes.Controls.Add(this.comboBox2);
             this.PClientes.Controls.Add(this.label8);
             this.PClientes.Controls.Add(this.textBox6);
             this.PClientes.Controls.Add(this.button3);
@@ -76,7 +77,6 @@
             this.PClientes.Controls.Add(this.textBox3);
             this.PClientes.Controls.Add(this.textBox2);
             this.PClientes.Controls.Add(this.comboBox1);
-            this.PClientes.Controls.Add(this.textBox1);
             this.PClientes.Controls.Add(this.numericUpDown1);
             this.PClientes.Controls.Add(this.BAddProduct);
             this.PClientes.Controls.Add(this.label9);
@@ -96,6 +96,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(166, 124);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
@@ -130,7 +131,7 @@
             // 
             // BAddClient
             // 
-            this.BAddClient.Location = new System.Drawing.Point(11, 8);
+            this.BAddClient.Location = new System.Drawing.Point(621, 8);
             this.BAddClient.Name = "BAddClient";
             this.BAddClient.Size = new System.Drawing.Size(99, 22);
             this.BAddClient.TabIndex = 34;
@@ -149,6 +150,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(470, 215);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -211,6 +213,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(386, 124);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -219,6 +222,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(597, 59);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -227,6 +231,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(386, 58);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -241,13 +246,6 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 23;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(191, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 20);
-            this.textBox1.TabIndex = 22;
-            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(107, 215);
@@ -257,7 +255,7 @@
             // 
             // BAddProduct
             // 
-            this.BAddProduct.Location = new System.Drawing.Point(654, 227);
+            this.BAddProduct.Location = new System.Drawing.Point(650, 227);
             this.BAddProduct.Name = "BAddProduct";
             this.BAddProduct.Size = new System.Drawing.Size(82, 20);
             this.BAddProduct.TabIndex = 20;
@@ -272,6 +270,14 @@
             this.label9.Size = new System.Drawing.Size(83, 13);
             this.label9.TabIndex = 19;
             this.label9.Text = "NUEVA VENTA";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(197, 214);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(250, 21);
+            this.comboBox2.TabIndex = 40;
             // 
             // NewSalePanel
             // 
@@ -290,7 +296,6 @@
         #endregion
 
         private System.Windows.Forms.Panel PClientes;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button BAddProduct;
         private System.Windows.Forms.Label label9;
@@ -312,5 +317,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

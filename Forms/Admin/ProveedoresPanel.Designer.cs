@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.PClientes = new System.Windows.Forms.Panel();
+            this.DTNac = new System.Windows.Forms.DateTimePicker();
             this.button7 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.BGuardarCliente = new System.Windows.Forms.Button();
             this.RBFem = new System.Windows.Forms.RadioButton();
             this.RBMasc = new System.Windows.Forms.RadioButton();
             this.TBDirec = new System.Windows.Forms.TextBox();
-            this.TBNac = new System.Windows.Forms.TextBox();
             this.TBEmail = new System.Windows.Forms.TextBox();
             this.TBTel = new System.Windows.Forms.TextBox();
             this.TBCuit = new System.Windows.Forms.TextBox();
@@ -55,13 +55,13 @@
             // PClientes
             // 
             this.PClientes.BackColor = System.Drawing.Color.DarkOrange;
+            this.PClientes.Controls.Add(this.DTNac);
             this.PClientes.Controls.Add(this.button7);
             this.PClientes.Controls.Add(this.label9);
             this.PClientes.Controls.Add(this.BGuardarCliente);
             this.PClientes.Controls.Add(this.RBFem);
             this.PClientes.Controls.Add(this.RBMasc);
             this.PClientes.Controls.Add(this.TBDirec);
-            this.PClientes.Controls.Add(this.TBNac);
             this.PClientes.Controls.Add(this.TBEmail);
             this.PClientes.Controls.Add(this.TBTel);
             this.PClientes.Controls.Add(this.TBCuit);
@@ -79,6 +79,17 @@
             this.PClientes.Name = "PClientes";
             this.PClientes.Size = new System.Drawing.Size(749, 228);
             this.PClientes.TabIndex = 11;
+            // 
+            // DTNac
+            // 
+            this.DTNac.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DTNac.Location = new System.Drawing.Point(485, 39);
+            this.DTNac.MaxDate = new System.DateTime(2016, 1, 1, 0, 0, 0, 0);
+            this.DTNac.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.DTNac.Name = "DTNac";
+            this.DTNac.Size = new System.Drawing.Size(200, 20);
+            this.DTNac.TabIndex = 21;
+            this.DTNac.Value = new System.DateTime(2016, 1, 1, 0, 0, 0, 0);
             // 
             // button7
             // 
@@ -100,17 +111,18 @@
             // 
             // BGuardarCliente
             // 
-            this.BGuardarCliente.Location = new System.Drawing.Point(515, 188);
+            this.BGuardarCliente.Location = new System.Drawing.Point(603, 188);
             this.BGuardarCliente.Name = "BGuardarCliente";
             this.BGuardarCliente.Size = new System.Drawing.Size(75, 23);
             this.BGuardarCliente.TabIndex = 18;
             this.BGuardarCliente.Text = "Guardar";
             this.BGuardarCliente.UseVisualStyleBackColor = true;
+            this.BGuardarCliente.Click += new System.EventHandler(this.BGuardarCliente_Click);
             // 
             // RBFem
             // 
             this.RBFem.AutoSize = true;
-            this.RBFem.Location = new System.Drawing.Point(506, 81);
+            this.RBFem.Location = new System.Drawing.Point(594, 81);
             this.RBFem.Name = "RBFem";
             this.RBFem.Size = new System.Drawing.Size(71, 17);
             this.RBFem.TabIndex = 17;
@@ -121,7 +133,7 @@
             // 
             this.RBMasc.AutoSize = true;
             this.RBMasc.Checked = true;
-            this.RBMasc.Location = new System.Drawing.Point(396, 81);
+            this.RBMasc.Location = new System.Drawing.Point(484, 81);
             this.RBMasc.Name = "RBMasc";
             this.RBMasc.Size = new System.Drawing.Size(73, 17);
             this.RBMasc.TabIndex = 16;
@@ -131,21 +143,14 @@
             // 
             // TBDirec
             // 
-            this.TBDirec.Location = new System.Drawing.Point(396, 111);
+            this.TBDirec.Location = new System.Drawing.Point(484, 111);
             this.TBDirec.Name = "TBDirec";
             this.TBDirec.Size = new System.Drawing.Size(194, 20);
             this.TBDirec.TabIndex = 15;
             // 
-            // TBNac
-            // 
-            this.TBNac.Location = new System.Drawing.Point(396, 40);
-            this.TBNac.Name = "TBNac";
-            this.TBNac.Size = new System.Drawing.Size(194, 20);
-            this.TBNac.TabIndex = 14;
-            // 
             // TBEmail
             // 
-            this.TBEmail.Location = new System.Drawing.Point(396, 143);
+            this.TBEmail.Location = new System.Drawing.Point(484, 143);
             this.TBEmail.Name = "TBEmail";
             this.TBEmail.Size = new System.Drawing.Size(194, 20);
             this.TBEmail.TabIndex = 13;
@@ -181,7 +186,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(336, 118);
+            this.label8.Location = new System.Drawing.Point(424, 118);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 8;
@@ -199,7 +204,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(336, 149);
+            this.label6.Location = new System.Drawing.Point(424, 149);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 6;
@@ -208,7 +213,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(336, 81);
+            this.label5.Location = new System.Drawing.Point(424, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 5;
@@ -217,7 +222,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(336, 43);
+            this.label4.Location = new System.Drawing.Point(424, 43);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 4;
@@ -272,7 +277,6 @@
         private System.Windows.Forms.RadioButton RBFem;
         private System.Windows.Forms.RadioButton RBMasc;
         private System.Windows.Forms.TextBox TBDirec;
-        private System.Windows.Forms.TextBox TBNac;
         private System.Windows.Forms.TextBox TBEmail;
         private System.Windows.Forms.TextBox TBTel;
         private System.Windows.Forms.TextBox TBCuit;
@@ -286,5 +290,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker DTNac;
     }
 }
